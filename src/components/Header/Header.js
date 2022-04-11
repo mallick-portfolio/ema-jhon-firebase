@@ -10,7 +10,9 @@ const Header = () => {
   const [user] = useAuthState(auth);
   return (
     <nav className="header">
-      <img src={logo} alt="" />
+      <Link to={"/"}>
+        <img src={logo} alt="" />
+      </Link>
       <div>
         <Link to="/shop">Shop</Link>
         <Link to="/orders">Orders</Link>

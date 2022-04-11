@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import logo from "../../img/google.svg";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -19,11 +19,16 @@ const Login = () => {
     setUserData({ ...userData, [e.target.name]: e.target.value });
   };
   const navigate = useNavigate();
+  let location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
+  if(user){
+    navigate(from, { replace: true });
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(email, password)
-    navigate('/shop')
   };
 
   return (
