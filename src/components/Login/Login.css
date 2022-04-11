@@ -1,0 +1,128 @@
+.login-form {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  margin: 20px auto;
+  border: 1px solid #95a0a7;
+  box-sizing: border-box;
+  border-radius: 8px;
+  position: relative;
+  padding: 20px 25px;
+}
+.login-form::after {
+  position: absolute;
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  left: -10px;
+  bottom: -10px;
+  background: #ffe0b3;
+  border-radius: 8px;
+  z-index: -1;
+}
+.form-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  letter-spacing: 0.0025em;
+  color: #2a414f;
+}
+.form-group input {
+  width: 450px;
+  height: 55px;
+  font-size: 24px;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+.login-form input[type="submit"] {
+  display: inline;
+  padding: 10px 50px;
+  width: 450px;
+  height: 55px;
+  background: rgba(255, 153, 0, 0.3);
+  border-radius: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.0015em;
+  cursor: pointer;
+  color: #0e161a;
+  margin-top: 15px;
+}
+.login-form h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.0025em;
+  text-align: center;
+  color: #2a414f;
+}
+.login-form p {
+  position: relative;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #95a0a7;
+}
+.login-form p::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: #95a0a7;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+}
+.login-form p::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: #95a0a7;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+.socialLogin {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  width: 450px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #95a0a7;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+
+  color: #2a414f;
+}
+.socialLogin img {
+  width: 30px;
+  margin-right: 8px;
+  height: auto;
+}
+.error {
+  color: red;
+  text-align: center;
+  font-size: 16px;
+}
